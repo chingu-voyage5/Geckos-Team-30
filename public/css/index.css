@@ -35,4 +35,24 @@ body {
   .active {
     background-color: #0099FF;
   }
-
+  .list-page{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .list-page .item {
+    border: 1px solid black;
+    flex-grow: 1;
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+  }
+  .list-page .item a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+  }
