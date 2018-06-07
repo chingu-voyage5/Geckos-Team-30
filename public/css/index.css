@@ -1,47 +1,216 @@
 body {
+  margin: 0;
+
+  background-color: #fff;
+  font-family: 'Rubik', sans-serif;
+
+  --font-color: #6C7A89;
+  --theme-color: #1BBC9B;
+  --second-theme-color: #6C7A89;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  color: var(--font-color);
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-box-container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 0 4px 0 var(--theme-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.flex-box-container .header li {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.list-page {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  align-items: center;
+}
+
+.list-page .item {
+  padding: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list-page .item a {
+  color: #fff;
+  font-size: 28px;
+}
+
+.list-page .item:nth-child(1) {
+  background-image: url("https://s15.postimg.cc/oecvntv0b/music_Black_Layer.jpg");
+  background-position: center;
+}
+
+.list-page .item:nth-child(2) {
+  background-image: url("https://s15.postimg.cc/us1yqzs5n/movie_Black_Layer.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.list-page .item:nth-child(3) {
+  background-image: url("https://s15.postimg.cc/gmw5oqo4r/youtube_Black_Layer.jpg");
+  background-position: center;
+}
+
+.list-page .item:nth-child(4) {
+  background-image: url("https://s15.postimg.cc/dg1m55tez/twitter_Black_Layer.jpg");
+  background-position: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  background-color: #fff;
+  color: var(--font-color);
+  font-weight: bold;
+  font-size: 14px;
+  border-top: 1px solid var(--theme-color);
+}
+
+footer span {
+  margin: 0 30px;
+  padding: 10px;
+}
+
+/*-----ITEM CONTAINER-----*/
+.item-content-container {
+  text-align: center;
+}
+
+.item-content-container h2 {
+  margin-top: 15px;
+}
+
+.item-content-container p {
+  padding: 30px;
+}
+
+/*-----MEDIA QUERIES-----*/
+@media only screen and (min-width: 800px) {
+  .flex-box-container .header {
+    font-size: 16px;
+  }
+
+  .list-page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-content-container p {
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .flex-box-container .header li:hover {
+    opacity: 0.7;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  .list-page .item {
+    padding: 100px;
+  }
+
+  .list-page .item:hover {
+    box-shadow: 1px 1px 3px 3px var(--theme-color);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  .item-content-container p {
+    padding: 50px 175px;
+  }
+}
+
+/*body {
     background-color: #FFCC00;
     padding: 20px;
     margin: 0;
-  }
-  h1, h2, p, ul, li {
+}
+
+h1, h2, p, ul, li {
     font-family: sans-serif;
-  }
-  ul.header li {
+}
+
+ul.header li {
     display: inline;
     list-style-type: none;
     margin: 0;
-  }
-  ul.header {
+}
+
+ul.header {
     background-color: #111;
     padding: 0;
-  }
-  ul.header li a {
+}
+
+ul.header li a {
     color: #FFF;
     font-weight: bold;
     text-decoration: none;
     padding: 20px;
     display: inline-block;
-  }
-  .content {
+}
+
+.content {
     padding: 20px;
-  }
-  .content h2 {
+}
+
+.content h2 {
     padding: 0;
     margin: 0;
-  }
-  .content li {
+}
+
+.content li {
     margin-bottom: 10px;
-  }
-  .active {
+}
+
+.active {
     background-color: #0099FF;
-  }
+}
+
   .list-page{
-    display: flex; 
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
-  }
-  .list-page .item {
+}
+
+.list-page .item {
     border: 1px solid black;
     flex-grow: 1;
     position: relative;
@@ -49,10 +218,11 @@ body {
     overflow: hidden;
     margin: 20px;
     text-align: center;
-  }
-  .list-page .item a {
+}
+
+.list-page .item a {
     color: #000;
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
-  }
+}*/

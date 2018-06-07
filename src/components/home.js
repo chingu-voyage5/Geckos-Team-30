@@ -14,7 +14,12 @@ class Home extends Component {
   });
 
   render() {
-    return <div className="list-page">{this.listItems}</div>;
+    return (
+      <div className="list-page">
+        {this.listItems}
+      </div>
+    );
   }
 }
+
 export default Home;
