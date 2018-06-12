@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = ()=> {
     return (
-        <div class="item-content-container">
+        <div className="item-content-container">
             <h2>Item title</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -27,7 +27,7 @@ const Item = ()=> {
               Praesent egestas ante vitae dui facilisis interdum.
             </p>
         </div>
-    )
+    );
 }
 
 export default Item
