@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
 
-const arr = ["Advice", "Movies", "Gif", "Twitter"];
+const arr = ["Advice", "Decision", "Gif", "Astronomy Picture of the Day"];
 
 class Home extends Component {
   listItems = arr.map((item, index) => {
