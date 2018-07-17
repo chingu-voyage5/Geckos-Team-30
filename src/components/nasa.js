@@ -23,12 +23,12 @@ import axios from 'axios';
                 console.log(this.state.items)
                 return (
                     <div className="item-content-container">
-                        <h2>Astronomy Picture of the Day</h2>
-                        <p>Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p>
+                        <h2 className="lot-of-content">Astronomy Picture of the Day</h2>
+                        <p>Each day a different image or photograph of our fascinating universe is featured, <br/> along with a brief explanation written by a professional astronomer.</p>
                         <h3><time>{this.state.items.date}</time> <br />{this.state.items.title}</h3>
                         <img src={this.state.items.url} alt={this.state.items.title} style={{width: '75%', minWidth: '350px'}}/>
                         <p style={{padding: '0'}}><small><b>Image Credit & Copyright:</b> {this.state.items.copyright}</small></p>
-                        <p><b>Explanation:</b> {this.state.items.explanation}</p>
+                        <p className="margin-from-image"><b>Explanation:</b> {this.state.items.explanation}</p>
                   </div>
                 );
             }

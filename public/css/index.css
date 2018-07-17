@@ -93,18 +93,26 @@ footer span {
 }
 
 .item-content-container h2 {
-  margin: 15px 0;
   font-size: 20px;
 }
 
+.item-content-container .lot-of-content {
+  margin: 30px 0;
+}
+
 .item-content-container p {
-  padding: 30px;
+  padding: 0 30px 30px;
+}
+
+.item-content-container .margin-from-image {
+  margin-top: 30px;
 }
 
 /*-----RANDOM ADVICE STYLES-----*/
 .random-advice {
   font-size: 20px;
   opacity: 0;
+  margin-top: 30px;
 
   animation-name: fade-in;
   animation-duration: 1s;
@@ -155,7 +163,7 @@ footer span {
   }
 
   .item-content-container p {
-    padding: 50px 100px;
+    padding: 0px 100px 30px;
   }
 
   .item-content-container h2 {
@@ -190,7 +198,7 @@ footer span {
   }
 
   .item-content-container p {
-    padding: 50px 175px;
+    padding: 0px 175px 30px;
   }
 
   .item-content-container h2 {
