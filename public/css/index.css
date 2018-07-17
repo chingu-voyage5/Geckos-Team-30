@@ -61,7 +61,31 @@ h1, h2, h3, p {
   font-weight: bold;
   box-shadow: 0px 2px 2px 0px var(--theme-color);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a8a8a8' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
 
+.list-page .item:first-child {
+  transform: translateY(100px);
+  opacity: 0;
+
+  animation-name: fade-from-bottom;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in-out;
+}
+
+.list-page .item:nth-child(2) {
+  transform: translateY(100px);
+  opacity: 0;
+
+  animation-name: fade-from-bottom;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+.list-page .item:nth-child(3) {
   transform: translateY(100px);
   opacity: 0;
 
@@ -69,6 +93,17 @@ h1, h2, h3, p {
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+.list-page .item:last-child {
+  transform: translateY(100px);
+  opacity: 0;
+
+  animation-name: fade-from-bottom;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
   animation-timing-function: ease-in-out;
 }
 
