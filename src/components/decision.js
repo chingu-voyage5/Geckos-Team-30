@@ -25,9 +25,9 @@ class Decision extends Component {
     render() {
         return (
             <div className="item-content-container">
-                <h2>Decision maker</h2>
+                <h2 className="lot-of-content">Decision maker</h2>
                 <img src={this.state.data.image} alt='gif' style={{width: '55%'}}/>
-                <h1 style={{padding:'20px'}}>{this.state.data.answer}</h1>
+                <h1 style={{padding:'15px'}}>{this.state.data.answer}</h1>
                 <button className="refresh-btn" onClick={this.fetchData}>Try again!</button>
             </div>
         );
