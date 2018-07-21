@@ -17,7 +17,7 @@ class Item extends Component {
   }
 
   fetchData() {
-    axios.get('http://api.giphy.com/v1/gifs/random?api_key=ptfKoWElauf4bgSX8lk5kUAPlLYEu46e')
+    axios.get('https://api.giphy.com/v1/gifs/random?api_key=ptfKoWElauf4bgSX8lk5kUAPlLYEu46e')
     .then(res => {
       const url = res.data.data.fixed_width_downsampled_url;
       const title = res.data.data.title;

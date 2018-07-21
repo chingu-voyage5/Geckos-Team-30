@@ -16,7 +16,7 @@ class Item extends Component {
   }
 
   fetchData() {
-    axios.get('http://api.adviceslip.com/advice')
+    axios.get('https://api.adviceslip.com/advice')
     .then(res => {
       const advice = res.data.slip.advice;
       this.setState({advice});
