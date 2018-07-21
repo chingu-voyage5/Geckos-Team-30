@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, BrowserRouter, Route, Switch} from 'react-router-dom';
 
 //Components
 import Header from './header'
@@ -13,7 +13,7 @@ import Decision from './decision'
 class App extends Component {
     render(){
         return(
-            <BrowserRouter>
+            <HashRouter>
                 <div className="main-container">
                     <Header />
                     <Switch>
@@ -25,7 +25,7 @@ class App extends Component {
                     </Switch>
                     <Footer />
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         )
     }
 }
